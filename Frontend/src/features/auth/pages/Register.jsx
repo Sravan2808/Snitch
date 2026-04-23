@@ -31,7 +31,7 @@ const Register = () => {
       fullName: formData.fullName,
       isSeller: formData.isSeller,
     });
-    navigate("/")
+    navigate("/");
   };
 
   return (
@@ -205,6 +205,12 @@ const Register = () => {
                     Register as a Seller
                   </span>
                 </label>
+                <a
+                  href="/api/auth/google"
+                  className="text-[#FFD700] text-center block mt-4 hover:underline underline-offset-4 tracking-wide"
+                >
+                  Continue with Google
+                </a>
               </div>
 
               {/* Submit Button */}
