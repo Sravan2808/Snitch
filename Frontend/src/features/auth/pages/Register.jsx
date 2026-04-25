@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import fashionImage from "../../../assets/fashion_editorial_dark.png";
 import { useAuth } from "../hook/useAuth";
 import { useNavigate, Link } from "react-router-dom";
+import ContinueWithGoogle from "../components/continueWithGoogle";
 
 const Register = () => {
   const { handleRegister } = useAuth();
@@ -205,12 +206,7 @@ const Register = () => {
                     Register as a Seller
                   </span>
                 </label>
-                <a
-                  href="/api/auth/google"
-                  className="text-[#FFD700] text-center block mt-4 hover:underline underline-offset-4 tracking-wide"
-                >
-                  Continue with Google
-                </a>
+
               </div>
 
               {/* Submit Button */}
@@ -222,6 +218,8 @@ const Register = () => {
                   Register
                 </button>
               </div>
+              
+              <ContinueWithGoogle />
             </form>
 
             <div className="mt-5 sm:mt-7 lg:mt-5 text-center">
